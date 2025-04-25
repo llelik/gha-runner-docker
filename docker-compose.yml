@@ -1,7 +1,7 @@
 services:
-  # Actions Runner application
+  # GH Actions Runner application
   app:
-    image: actions-runner
+    image: gh-actions-runner
     container_name: gha-runner
     restart: unless-stopped
     env_file:
@@ -10,7 +10,7 @@ services:
     environment:
       - REPO=$REPO
       - REG_TOKEN=$REG_TOKEN
-      # adding python path to add our custom persistent lib location
+      # adding python path to add
       - PYTHONPATH=/usr/lib/python312.zip:/usr/lib/python3.12:/usr/lib/python3.12/lib-dynload:/usr/lib/python3.12/site-packages
     # allow interactive shell
     stdin_open: true
