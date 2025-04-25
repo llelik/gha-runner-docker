@@ -1,0 +1,7 @@
+---
+collections:
+  - netapp.ontap
+  - netapp.cloudmanager
+  - netapp.storagegrid
+  - netapp_eseries.santricity
+...
